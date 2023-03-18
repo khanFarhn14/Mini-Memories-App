@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -12,9 +10,18 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold
+    return Scaffold
     (
-      body: Text("This is Home Page")
+      body: Center
+      (
+        child: Container
+        (
+          width: 150,
+          height: 150,
+          color: Colors.black,
+          child: const Text("Camera")
+        )
+      )
     );
   }
 }
