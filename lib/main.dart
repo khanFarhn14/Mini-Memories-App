@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:mini_memories/home.dart';
-import 'camera.dart';
 
-void main() => runApp
-(
-  const MaterialApp
+void main() async
+{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp
   (
-    debugShowCheckedModeBanner: false,
-    home: CameraPage()
-  )
-);
+    const MaterialApp
+    (
+      debugShowCheckedModeBanner: false,
+      home: HomePage()
+    )
+  );
+}

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "892902565590",
+    "project_id": "mini-memories",
+    "storage_bucket": "mini-memories.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892902565590:android:c6d3eb8f6323023aea4b77",
+        "android_client_info": {
+          "package_name": "com.example.mini_memories"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892902565590-m7a450vib7rd6784olmnplceik8cmql3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mini_memories",
+            "certificate_hash": "f8135d4c1bde9861decfb47cde2477cf358d9fa1"
+          }
+        },
+        {
+          "client_id": "892902565590-0rnjs3qh11aruf84o0586kf5prva5ohs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg_ZiEJvdG9ggZ_YmprC21jA2BWK9J9Gg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892902565590-0rnjs3qh11aruf84o0586kf5prva5ohs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

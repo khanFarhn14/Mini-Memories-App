@@ -1,5 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:mini_memories/final.dart';
+import 'package:mini_memories/widgets.dart';
 import 'package:video_player/video_player.dart';
 
 class VideoPage extends StatefulWidget 
@@ -13,6 +15,7 @@ class VideoPage extends StatefulWidget
 
 class _VideoPageState extends State<VideoPage> 
 {
+  late String videoName;
   late VideoPlayerController _videoPlayerController;
 
   @override
@@ -45,7 +48,7 @@ class _VideoPageState extends State<VideoPage>
             icon: const Icon(Icons.check),
             onPressed: () 
             {
-              print('do something with the file');
+              nextScreenReplace(context, FinalPage(filePath: widget.filePath));
             },
           )
         ],
@@ -61,7 +64,7 @@ class _VideoPageState extends State<VideoPage>
             return const Center(child: CircularProgressIndicator());
           } else 
           {
-            return VideoPlayer(_videoPlayerController);
+            return VideoPlayer(_videoPlayerController,);
           }
         },
       ),
